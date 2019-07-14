@@ -1,0 +1,135 @@
+
+Oggetto: Re: Progetto demo react-native
+
+Vasile Botoroga <vasile.botoroga@temera.it>
+gio 20 giu, 11:25
+a livionisi6, Vincenzo Volpe, salifomar.faye, m.delprete, m.violante, a.ascolese, Giuliano Ferraioli, g.pepe
+
+Stai visualizzando un messaggio allegato. Posta di Temera Srl non può verificare l'autenticità dei messaggi allegati.
+FavMovies Demo App
+
+Applicazione molto semplice da utilizzare come test per gli interview.
+
+
+
+Prototype: https://sketch.cloud/s/pLQok/a/8aJvo7/play
+
+
+
+Scopo dell’esercizio
+
+Realizzare un’applicazione per elencare i film più popolari, mostrare il dettaglio di un film e poterlo mettere tra i favoriti (LocalStorage/AssyncStorage).
+
+
+
+Pagine/Screen (3)
+
+Lista Film Top Rated
+Dettaglio Film
+Lista Film Favoriti
+
+
+
+
+Su mobile implementare infinite scroll per la lista dei film popolari
+
+Le icone utilizzate sono Ionicons v2: https://ionicframework.com/docs/ionicons/
+
+
+
+Bonus Points post rilascio
+
+Creato un repo git
+Creato README.md
+Codice commentato
+Il salvataggio dei preferiti ha un’architettura pulita (senior)
+Commit atomici (senior)
+Gestione offline, mostra errore (senior)
+
+
+Bonus Points web
+
+Utilizzo di stile preprocessato (sass, less)
+Supporto browser e compatibilità
+
+
+Api
+
+https://www.themoviedb.org
+
+
+
+user: temerademo
+
+pass: temerademo
+
+
+
+Image paths 
+
+https://image.tmdb.org/t/p/w500 + poster_path
+
+https://image.tmdb.org/t/p/w500 + backdrop_path
+
+
+
+Get top rated movies —> https://api.themoviedb.org/3/movie/top_rated?api_key=a74169393e0da3cfbc2c58c5feec63d7
+
+Get top rated movies paginated —> https://api.themoviedb.org/3/movie/top_rated?api_key=a74169393e0da3cfbc2c58c5feec63d7&page=2
+
+Get movie details —> https://api.themoviedb.org/3/movie/278?api_key=a74169393e0da3cfbc2c58c5feec63d7
+
+Get Movie image —> https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg
+
+
+
+
+
+
+Il giorno gio 20 giu 2019 alle ore 11:11 Vasile Botoroga <vasile.botoroga@temera.it> ha scritto:
+https://github.com/vaxxis/react-native-favorite-movies
+
+-- 
+--
+VASILE BOTOROGA 
+Software Developer	
+
+Office: +39 0555392960
+Email: vasile.botoroga@temera.it
+
+www.temera.it
+
+Florence: Via di Pianvallico 5 · 50038 Scarperia e San Piero (FI) · Italy
+Milan: Via Tortona 33 · 20143 Milano · Italy
+London: Olden House · 4th Floor · 54-68 Oxford Street OR 57 Rathbone Place, W1T 1JU · London · England
+New York: 377 Park Ave. S. · 2nd Floor · NY 10016 · New York · United States of America
+Facebook | Linkedin | Twitter
+
+
+Ai sensi del D.Lgs. n.196 del 30.6.2003, si precisa che le informazioni contenute in questo messaggio e nei suoi eventuali allegati sono riservate e per uso esclusivo del destinatario. Nessuno, all'infuori dello stesso, puo' copiare o distribuire il messaggio, o parte di esso, a terzi. Chiunque riceva questo messaggio per errore, e' pregato di distruggerlo e di informare il mittente
+
+According to the D.Lgs. n. 196, dated 30.6.2003, this document and its attachments are confidential and intended for the named addressee(s) only. If you are not the intended recipient of this message, any use or dissemination of this email is prohibited. If you have received this document by mistake, please notify the sender and destroy immediately all physical and/or electronic copies.
+
+
+
+-- 
+--
+VASILE BOTOROGA 
+Software Developer	
+
+Office: +39 0555392960
+Email: vasile.botoroga@temera.it
+
+www.temera.it
+
+Florence: Via di Pianvallico 5 · 50038 Scarperia e San Piero (FI) · Italy
+Milan: Via Tortona 33 · 20143 Milano · Italy
+London: Olden House · 4th Floor · 54-68 Oxford Street OR 57 Rathbone Place, W1T 1JU · London · England
+New York: 377 Park Ave. S. · 2nd Floor · NY 10016 · New York · United States of America
+Facebook | Linkedin | Twitter
+
+
+Ai sensi del D.Lgs. n.196 del 30.6.2003, si precisa che le informazioni contenute in questo messaggio e nei suoi eventuali allegati sono riservate e per uso esclusivo del destinatario. Nessuno, all'infuori dello stesso, puo' copiare o distribuire il messaggio, o parte di esso, a terzi. Chiunque riceva questo messaggio per errore, e' pregato di distruggerlo e di informare il mittente
+
+According to the D.Lgs. n. 196, dated 30.6.2003, this document and its attachments are confidential and intended for the named addressee(s) only. If you are not the intended recipient of this message, any use or dissemination of this email is prohibited. If you have received this document by mistake, please notify the sender and destroy immediately all physical and/or electronic copies.
+
