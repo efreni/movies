@@ -5,29 +5,19 @@ import Button from './src/components/Button'
 
 class Home extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    headerTitle: <Header headerText={'Favorities'} />,
+    headerLeft: 'suka',
+    headerTitle: <Header headerText={'Movies'} />,
     headerRight: (
       <Button
-        title="Cuoricino"
+        title="Favorities"
         color="#0074D9"
-        onPress={() => {
-          alert('Qui ci va messo un cuoricino!')
-        }}
-      />
-    ),
-  })
-
-  /*static navigationOptions = ({ navigation }) => ({
-    title: 'My Profile!',
-    headerRight: (
-      <Button
-        title="Menu"
         onPress={() => {
           navigation.navigate('Favorities')
         }}
       />
     ),
-  })*/
+  })
+
   render() {
     return <View style={{ flex: 1 }} />
   }

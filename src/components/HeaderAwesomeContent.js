@@ -1,30 +1,24 @@
 import React from 'react'
-import { Text, View, Linking } from 'react-native'
-import Button from './Button'
+import { Text, View } from 'react-native'
 
 const HeaderAwesomeContent = props => {
   const { headerTextStyle, viewStyle } = styles
   return (
     <View style={viewStyle}>
       <Text style={headerTextStyle}>{props.headerTextContent}</Text>
-      <Button onPress={() => Linking.openURL('http://www.google.it')}>Favorities</Button>
     </View>
   )
 }
 
 const styles = {
   headerTextStyle: {
+    flex: 1,
     fontSize: 17,
     fontWeight: 'bold',
+    alignSelf: 'center',
     textAlign: 'center',
     paddingTop: 5,
     paddingBottom: 5,
-    marginRight: 70,
-  },
-  viewStyle: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignSelf: 'flex-end',
   },
 }
 
