@@ -24,7 +24,7 @@ const styles = {
     paddingBottom: 15,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 20 },
-    shoadowOpacity: 0.2,
+    shodowOpacity: 0.2,
     elevation: 1,
   },
 }

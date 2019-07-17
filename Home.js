@@ -5,7 +5,6 @@ import Button from './src/components/Button'
 
 class Home extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    headerLeft: 'suka',
     headerTitle: <Header headerText={'Movies'} />,
     headerRight: (
       <Button
