@@ -13,7 +13,7 @@ class MovieList extends Component {
   }
 
   renderMovies() {
-    return this.state.movies.map(movie => <Text>{movie.title}</Text>)
+    //   return this.state.movies.map(movie => <Text>{movie.title}</Text>)
   }
 
   render() {
