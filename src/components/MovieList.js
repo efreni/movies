@@ -1,22 +1,23 @@
-import React, { Component } from 'react'rr
-import { ScrollView } from 'react-native'
+import React, { Component } from 'react'
+import { Text, ScrollView } from 'react-native'
 import axios from 'axios'
-// import MovieDetail from './MovieDetail';
+//import MovieDetail from './MovieDetail';
 
 class MovieList extends Component {
-  state = { topRatedMovies: [] }
+  state = { movies: [] }
 
   componentDidMount() {
     axios
       .get('https://api.themoviedb.org/3/movie/top_rated?api_key=a74169393e0da3cfbc2c58c5feec63d7')
-      .then(response => this.setState({ albums: response.data }))
+      .then(response => this.setState({ movies: response.data }))
   }
 
   renderMovies() {
-    //    return this.state.topRatedMovies.map(topRatedMovies);
+    return this.state.movies.map(movie => <Text>{movie.title}</Text>)
   }
 
   render() {
+    console.log(this.state)
     return <ScrollView>{this.renderMovies()}</ScrollView>
   }
 }

@@ -1,5 +1,4 @@
 import { View } from 'react-native'
-import Header from './src/components/Header'
 import React from 'react'
 import Icon from 'react-native-ionicons'
 
@@ -14,17 +13,22 @@ class Home extends React.Component {
         style={styles.iconLeft}
         name="arrow-back"
         onPress={() => {
-          alert('Qui ci va messo un cuoricino!')
+          navigation.navigate('Home')
         }}
       />
     ),
-    headerTitle: <Header headerText={'Favorities'} />,
+    headerTitle: 'Favorities',
+    headerTitleStyle: {
+      textAlign: 'center',
+      flexGrow: 1,
+      alignSelf: 'center',
+    },
     headerRight: (
       <Icon
         style={styles.iconRight}
         name="heart-empty"
         onPress={() => {
-          alert('Qui ci va messo un cuoricino!')
+          alert('Animazione a cuoricino pieno e colore rosso!')
         }}
       />
     ),

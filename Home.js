@@ -1,24 +1,42 @@
-import { View } from 'react-native'
-import Header from './src/components/Header'
+import { View, Text } from 'react-native'
 import React from 'react'
-import Button from './src/components/Button'
+import MovieList from './src/components/MovieList'
 
 class Home extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    headerTitle: <Header headerText={'Movies'} />,
+    headerTitle: 'Movies',
+    headerTitleStyle: {
+      textAlign: 'center',
+      flexGrow: 1,
+      alignSelf: 'center',
+      justifyContent: 'center',
+    },
     headerRight: (
-      <Button
-        title="Favorities"
-        color="#0074D9"
+      <Text
+        style={styles.favoritiesText}
         onPress={() => {
           navigation.navigate('Favorities')
         }}
-      />
+      >
+        Favorities
+      </Text>
     ),
   })
 
   render() {
-    return <View style={{ flex: 1 }} />
+    return (
+      <View>
+        <MovieList />
+      </View>
+    )
   }
+}
+
+const styles = {
+  favoritiesText: {
+    color: '#0074D9',
+    fontSize: 20,
+    paddingRight: 15,
+  },
 }
 export default Home
