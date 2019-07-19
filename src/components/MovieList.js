@@ -9,11 +9,11 @@ class MovieList extends Component {
   componentDidMount() {
     axios
       .get('https://api.themoviedb.org/3/movie/top_rated?api_key=a74169393e0da3cfbc2c58c5feec63d7')
-      .then(response => this.setState({ movies: response.data }))
+      .then(response => this.setState({ movies: response.data.results }))
   }
 
   renderMovies() {
-    //   return this.state.movies.map(movie => <Text>{movie.title}</Text>)
+    return this.state.movies.map(movie => <Text>{movie.title}</Text>)
   }
 
   render() {
