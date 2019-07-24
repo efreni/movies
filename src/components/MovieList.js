@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Text, ScrollView } from 'react-native'
+import { ScrollView } from 'react-native'
 import axios from 'axios'
-//import MovieDetail from './MovieDetail';
+import MovieDetail from './MovieDetail'
 
 class MovieList extends Component {
   state = { movies: [] }
@@ -13,11 +13,10 @@ class MovieList extends Component {
   }
 
   renderMovies() {
-    return this.state.movies.map(movie => <Text>{movie.title}</Text>)
+    return this.state.movies.map(movie => <MovieDetail key={movie.id} movie={movie} />)
   }
 
   render() {
-    console.log(this.state)
     return <ScrollView>{this.renderMovies()}</ScrollView>
   }
 }

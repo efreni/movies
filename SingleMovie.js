@@ -1,8 +1,8 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 import MovieList from './src/components/MovieList'
 
-class Home extends React.Component {
+class SingleMovie extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     headerTitle: 'Movies',
     headerRight: (
@@ -33,4 +33,4 @@ const styles = {
     paddingRight: 15,
   },
 }
-export default Home
+export default SingleMovie

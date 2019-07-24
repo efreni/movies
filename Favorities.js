@@ -4,10 +4,6 @@ import Icon from 'react-native-ionicons'
 
 class Home extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    headerStyle: {
-      backgroundColor: '#F8F8F8',
-      borderBottomColor: 'transparent',
-    },
     headerLeft: (
       <Icon
         style={styles.iconLeft}
@@ -18,11 +14,6 @@ class Home extends React.Component {
       />
     ),
     headerTitle: 'Favorities',
-    headerTitleStyle: {
-      textAlign: 'center',
-      flexGrow: 1,
-      alignSelf: 'center',
-    },
     headerRight: (
       <Icon
         style={styles.iconRight}
