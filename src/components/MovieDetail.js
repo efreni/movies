@@ -26,7 +26,7 @@ const MovieDetail = ({ movie }) => {
     <Card>
       <TouchableOpacity
         onPress={() => {
-          // navigation.navigate('Favorities')
+          navigation.navigate('Favorities')
         }}
       >
         <CardSection>
